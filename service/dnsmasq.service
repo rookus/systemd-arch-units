@@ -1,0 +1,9 @@
+[Unit]
+Description=A lightweight DHCP and caching DNS server
+
+[Service]
+PIDFile=/var/run/dnsmasq.pid
+ExecStart=/usr/sbin/dnsmasq --keep-in-foreground
+
+[Install]
+WantedBy=multi-user.target
